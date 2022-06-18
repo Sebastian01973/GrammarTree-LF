@@ -62,6 +62,9 @@ public class Controller implements ActionListener, MouseListener {
         frame.getAxiom(),productionsDialog.getProductions());
 
         frame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
+
+        //Ojo
+        jMainFrame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
     }
 
     private void editParameters(){

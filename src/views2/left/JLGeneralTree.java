@@ -45,7 +45,7 @@ public class JLGeneralTree extends JPanel{
     }
 
     public void showTree(GeneralNode root, String grammarName){
-        header.setText(Constant.TITLE_HEADER_LEFT + Constant.GRAMMAR_SIMBOL + grammarName);
+        header.setText(Constant.SPACE + Constant.TITLE_HEADER_LEFT + Constant.GRAMMAR_SIMBOL + grammarName + Constant.SPACE);
         graphicRoot = new DefaultMutableTreeNode(root.getSimbol());
         printTree(graphicRoot,root);
         treeModel.setRoot(graphicRoot);
@@ -75,5 +75,4 @@ public class JLGeneralTree extends JPanel{
             expandAllNodes(tree, rowCount, tree.getRowCount());
         }
     }
-
 }
