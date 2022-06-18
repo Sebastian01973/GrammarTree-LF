@@ -1,18 +1,16 @@
-package views;
+package views2.left;
 
 import models.GeneralNode;
+import views.MyTreeCellRenderer;
+import views2.Constant;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
 
-public class PanelGeneralTree extends JPanel {
-    
-    private static final String TITLE_HEADER = "Arbol Derivación General ";
-    private static final String GRAMMAR_SIMBOL = "G";
-    private static final Color COLOR_HEADER = Color.decode("#B86BF5");
-    public static final Font DESCRIPTION_FONT = new Font("Roboto", Font.BOLD, 16);
+public class JLGeneralTree extends JPanel{
+
 
     private DefaultMutableTreeNode graphicRoot;
     private DefaultTreeModel treeModel;
@@ -20,11 +18,11 @@ public class PanelGeneralTree extends JPanel {
     private JPanel panelCenter;
 
     private JLabel header;
-    
-    public PanelGeneralTree(){
+
+    public JLGeneralTree(){
         setLayout(new BorderLayout());
-        setBackground(COLOR_HEADER);
-        setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
+        setBackground(Constant.COLOR_WHITE);
+        setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
         panelCenter = new JPanel(new BorderLayout());
         panelCenter.setOpaque(false);
         this.add(panelCenter,BorderLayout.CENTER);
@@ -36,18 +34,18 @@ public class PanelGeneralTree extends JPanel {
 
     private void addHeader(){
         header = new JLabel();
-        header.setForeground(Color.WHITE);
+        header.setForeground(Color.BLACK);
         header.setHorizontalTextPosition(SwingConstants.RIGHT);
         header.setVerticalTextPosition(SwingConstants.CENTER);
-        header.setFont(DESCRIPTION_FONT);
-        header.setText(TITLE_HEADER);
+        header.setFont(Constant.FONT_ARIAL_ROUNDER_17);
+        header.setText(Constant.SPACE + Constant.TITLE_HEADER_LEFT + Constant.SPACE);
         header.setHorizontalAlignment(JLabel.CENTER);
         header.setVerticalAlignment(JLabel.CENTER);
         add(header,BorderLayout.PAGE_START);
     }
 
     public void showTree(GeneralNode root, String grammarName){
-        header.setText(TITLE_HEADER + GRAMMAR_SIMBOL + grammarName);
+        header.setText(Constant.TITLE_HEADER_LEFT + Constant.GRAMMAR_SIMBOL + grammarName);
         graphicRoot = new DefaultMutableTreeNode(root.getSimbol());
         printTree(graphicRoot,root);
         treeModel.setRoot(graphicRoot);
@@ -79,4 +77,3 @@ public class PanelGeneralTree extends JPanel {
     }
 
 }
-
