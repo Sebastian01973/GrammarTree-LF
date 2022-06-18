@@ -1,6 +1,9 @@
+# Settings of Intellij
+
+/out/
 /.idea
 *.iml
-/.out
+
 # Compiled class file
 *.class
 
