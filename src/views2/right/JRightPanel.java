@@ -15,20 +15,20 @@ public class JRightPanel extends JPanel {
     private JRBody jrBody;
     private JRFooter jrFooter;
 
-    public JRightPanel(ActionListener actionListener, MouseListener mouseListener) {
+    public JRightPanel(ActionListener actionListener) {
         this.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         this.setBackground(Constant.COLOR_WHITE);
         this.setLayout(new BorderLayout(0,0));
         this.setOpaque(true);
-        initComponents(actionListener,mouseListener);
+        initComponents(actionListener);
 
     }
 
-    private void initComponents(ActionListener actionListener, MouseListener mouseListener) {
+    private void initComponents(ActionListener actionListener) {
         jrHeader = new JRHeader();
         this.add(jrHeader,BorderLayout.NORTH);
 
-        jrBody = new JRBody(actionListener,mouseListener);
+        jrBody = new JRBody(actionListener);
         this.add(jrBody,BorderLayout.CENTER);
 
         jrFooter = new JRFooter(actionListener);

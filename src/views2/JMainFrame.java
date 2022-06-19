@@ -14,19 +14,21 @@ public class JMainFrame extends JFrame {
 
     private JMainPanel jMainPanel;
 
-    public JMainFrame(ActionListener actionListener, MouseListener mouseListener) {
+    public JMainFrame(ActionListener actionListener) {
         this.setIconImage( new ImageIcon(getClass().getResource( Constant.LOGO_PATH)).getImage());
         this.setTitle( Constant.TITLE );
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setExtendedState(MAXIMIZED_BOTH);
         this.setMinimumSize(Constant.SCREEN_SIZE);
         this.getContentPane().setBackground(Constant.COLOR_WHITE);
         this.getContentPane().setLayout(new BorderLayout(0,0));
-        initComponents(actionListener,mouseListener);
+        initComponents(actionListener);
         this.setVisible(true);
     }
 
-    private void initComponents(ActionListener actionListener, MouseListener mouseListener) {
-        jMainPanel = new JMainPanel(actionListener,mouseListener);
+    private void initComponents(ActionListener actionListener) {
+        jMainPanel = new JMainPanel(actionListener);
 
         this.getContentPane().add(jMainPanel, BorderLayout.CENTER);
     }

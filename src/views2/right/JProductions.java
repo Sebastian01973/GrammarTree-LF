@@ -15,7 +15,7 @@ public class JProductions extends JPanel  {
     private JPanel productions;
     private boolean isEnable;
 
-    public JProductions(MouseListener mouseListener) {
+    public JProductions() {
         isEnable = true;
         this.setLayout(new BorderLayout(0,0));
         this.setBackground(Constant.COLOR_WHITE);

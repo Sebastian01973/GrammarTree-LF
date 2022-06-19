@@ -16,17 +16,17 @@ public class JMainPanel extends JPanel {
     private JLeftPanel jLeftPanel;
     private JRightPanel jRightPanel;
 
-    public JMainPanel(ActionListener actionListener, MouseListener mouseListener) {
+    public JMainPanel(ActionListener actionListener) {
         this.setBackground(Constant.COLOR_WHITE);
         this.setLayout(new BorderLayout(0,0));
-        initComponents(actionListener,mouseListener);
+        initComponents(actionListener);
     }
 
-    private void initComponents(ActionListener actionListener,MouseListener mouseListener) {
+    private void initComponents(ActionListener actionListener) {
         jLeftPanel = new JLeftPanel(actionListener);
         this.add(jLeftPanel,BorderLayout.WEST);
 
-        jRightPanel = new JRightPanel(actionListener,mouseListener);
+        jRightPanel = new JRightPanel(actionListener);
         this.add(jRightPanel,BorderLayout.CENTER);
     }
 

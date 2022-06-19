@@ -17,14 +17,14 @@ public class JRBody extends JPanel{
     JProductions jProduction;
 
     JPanel panelNorth;
-    public JRBody(ActionListener actionListener, MouseListener mouseListener) {
+    public JRBody(ActionListener actionListener) {
         this.setLayout(new BorderLayout(0,0));
         this.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
         this.setBackground(Constant.COLOR_WHITE);
-        initComponents(actionListener,mouseListener);
+        initComponents(actionListener);
     }
 
-    private void initComponents(ActionListener actionListener, MouseListener mouseListener) {
+    private void initComponents(ActionListener actionListener) {
         panelNorth = new JPanel();
         panelNorth.setLayout(new BoxLayout(panelNorth, BoxLayout.Y_AXIS));
         panelNorth.setBorder(BorderFactory.createEmptyBorder(5,5,25,5));
@@ -32,7 +32,7 @@ public class JRBody extends JPanel{
         addBottonsPanel(actionListener);
         this.add(panelNorth,BorderLayout.NORTH);
 
-        jProduction = new JProductions(mouseListener);
+        jProduction = new JProductions();
         this.add(jProduction,BorderLayout.CENTER);
     }
 
