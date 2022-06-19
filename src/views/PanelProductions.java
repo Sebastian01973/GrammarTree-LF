@@ -1,5 +1,7 @@
 package views;
 
+import views.PanelTextFields;
+
 import javax.swing.*;
 import java.awt.*;
 

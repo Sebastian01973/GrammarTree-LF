@@ -47,6 +47,7 @@ public class JLNorthPanel extends JPanel {
         panelHeader.add(wordTextField);
 
         RoundedJButton validateButton = new RoundedJButton(Constant.BUTTON_TEXT,Commands.VALIDATE_WORD.toString(),actionListener,Constant.COLOR_RED_LIGHT_1,Constant.COLOR_WHITE);
+        validateButton.setFont(Constant.FONT_ARIAL_ROUNDER_17);
         panelHeader.add(validateButton);
 
         panelBox.add(panelHeader);

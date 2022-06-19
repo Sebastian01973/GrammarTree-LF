@@ -58,16 +58,23 @@ public class Controller implements ActionListener, MouseListener {
     }
     
     private void createAndAddGrammar(){
-        manager.createGrammar(frame.getGrammarName(),frame.getNoTerminalSimbols(),frame.getSigma(), 
+
+        manager.createGrammar(frame.getGrammarName(),frame.getNoTerminalSimbols(),frame.getSigma(),
         frame.getAxiom(),productionsDialog.getProductions());
 
         frame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
 
-        //Ojo
+        //News
+        System.out.println("Crear");
+        manager.createGrammar(jMainFrame.getGrammarName(),jMainFrame.getNoTerminalSimbols(),jMainFrame.getSigma(),
+                jMainFrame.getAxiom(),productionsDialog.getProductions()); // Ojo producciones
+
         jMainFrame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
+
     }
 
     private void editParameters(){
+
         frame.enableFields();
         productionsDialog.enableProductions();
     }
@@ -79,6 +86,7 @@ public class Controller implements ActionListener, MouseListener {
 
     private void validateWordOnGrammar(){
         String word = frame.getWord();
+        System.out.println("Botton Validar");
         frame.showTree(manager.getParticularRoot(word));
     }
 

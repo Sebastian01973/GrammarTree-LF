@@ -8,6 +8,9 @@ public class Constant {
     public static final String TITLE = "Aplicacion";
     public static final String TITLE_HEADER_LEFT = "    Arbol Derivación General    ";
     public static final String SPACE  = "                   ";
+    public static final String SPACE2  = "    \n   \n    \n   \n   \n   \n  \n  \n";
+
+
 
     public static final String DESCRIPTION = "Ingrese la palabra a validar";
     public static final String WATER_WORD = "Ingrese la palabra a validar";
@@ -21,6 +24,12 @@ public class Constant {
     public static final String EQUAL_SYMBOL = " = ";
     public static final String GRAMMAR_SIMBOL_WORD = "W";
     public static final String LOGO_PATH = "/img/logo.png";
+
+    public static final String SIGMA = "Σ";
+    public static final String V = "V";
+    public static final String AXIOM = "S";
+    public static final String PRODUCTION = "P";
+
 
 
     public static final Color COLOR_WHITE = Color.decode("#ffffff") ;
@@ -39,7 +48,8 @@ public class Constant {
 
     public static final Color COLOR_GREEN_1 = Color.decode("#5eb95e") ;
     public static final Color COLOR_GREEN_LIGHT_1 = Color.decode("#84c887") ;
-
+    public static final Color COLOR_TEXT_FIELD = Color.decode("#E5F5EE");
+    public static final Color DISABLE_COLOR = Color.decode("#808487");
     public static final Font FONT_ARIAL_ROUNDER_17 = new Font("Arial Rounded MT Bold", Font.PLAIN, 17);
     public static final Font FONT_ARIAL_ROUNDER_17_B = new Font("Arial Rounded MT Bold", Font.BOLD, 17);
     public static final Font FONT_ARIAL_ROUNDER_20 = new Font("Arial Rounded MT Bold", Font.PLAIN, 20);
@@ -52,4 +62,9 @@ public class Constant {
 
     public static final Font TEXT_FIELD_FONT = new Font("Cambria Math", Font.PLAIN, 20);
     public static final Font LABEL_FONT = new Font("Cambria Math", Font.BOLD, 20);
+
+    public static final Font TITLE_FONT = new Font("Cambria Math", Font.BOLD, 20);
+    public static final Font FIELDS_FONT = new Font("Cambria Math", Font.PLAIN, 20);
+
+    public static final String SETTINGS_GRAMMAR = "Configurar Gramatica";
 }

@@ -32,4 +32,28 @@ public class JMainFrame extends JFrame {
     public void showGeneralTree(GeneralNode root, String grammarName){
         jMainPanel.showGeneralTree(root,grammarName);
     }
+
+    public String getGrammarName(){
+        return jMainPanel.getGrammarName();
+    }
+
+    public String[] getSigma(){
+        return jMainPanel.getSigma();
+    }
+
+    public String[] getNoTerminalSimbols(){
+        return jMainPanel.getNoTerminalSimbols();
+    }
+
+    public String getAxiom(){
+        return jMainPanel.getAxiom();
+    }
+
+    public void enableFields(){
+        jMainPanel.enableFields();
+    }
+
+    public void deleteContentFields(){
+        jMainPanel.deleteContentFields();
+    }
 }

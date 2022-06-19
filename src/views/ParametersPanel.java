@@ -1,6 +1,7 @@
 package views;
 
 import controllers.Commands;
+import views.PanelTextFields;
 
 import javax.swing.*;
 import java.awt.*;

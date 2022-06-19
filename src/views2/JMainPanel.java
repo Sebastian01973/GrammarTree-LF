@@ -32,4 +32,28 @@ public class JMainPanel extends JPanel {
         jLeftPanel.showGeneralTree(root,grammarName);
     }
 
+    public String getGrammarName(){
+        return jRightPanel.getGrammarName();
+    }
+
+    public String[] getSigma(){
+        return jRightPanel.getSigma();
+    }
+
+    public String[] getNoTerminalSimbols(){
+        return jRightPanel.getNoTerminalSimbols();
+    }
+
+    public String getAxiom(){
+        return jRightPanel.getAxiom();
+    }
+
+    public void enableFields(){
+        jRightPanel.enableFields();
+    }
+
+    public void deleteContentFields(){
+        jRightPanel.deleteContentFields();
+    }
+
 }

@@ -11,9 +11,9 @@ public class PanelTextFields extends JPanel{
     public static final int SIZE_TEXT_FIELD = 10;
     public static final Color COLOR_TEXT_FIELD = Color.decode("#E5F5EE");
     public static final Color DISABLE_COLOR = Color.decode("#808487");
-    
+
     private JTextField textField;
-    
+
     public PanelTextFields(String text, String message){
         setLayout(new FlowLayout(FlowLayout.LEFT));
         setOpaque(false);
