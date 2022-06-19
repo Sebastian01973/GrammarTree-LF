@@ -1,13 +1,11 @@
 package views2;
 
-import controllers.Controller;
 import models.GeneralNode;
 import models.Production;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 public class JMainFrame extends JFrame {

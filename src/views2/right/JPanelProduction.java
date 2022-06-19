@@ -1,13 +1,10 @@
 package views2.right;
 
-import views.ParametersPanel;
 import views2.Constant;
-import views2.models.JModelLabel;
 import views2.models.JModelTextField;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class JPanelProduction extends JPanel {
 
@@ -34,7 +31,7 @@ public class JPanelProduction extends JPanel {
         p.add(Box.createRigidArea(new Dimension(10,0)));
 
         JLabel arrow = new JLabel("→");
-        arrow.setFont(ParametersPanel.PARAMETERS_FONT);
+        arrow.setFont(Constant.FIELDS_FONT);
         p.add(arrow);
 
         p.add(Box.createRigidArea(new Dimension(10,0)));

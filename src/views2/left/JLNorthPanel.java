@@ -1,10 +1,7 @@
 package views2.left;
 
 import controllers.Commands;
-import views.Buttons;
 import views2.Constant;
-import views2.models.JModelButton;
-import views2.models.JModelLabel;
 import views2.models.JModelTextField;
 import views2.models.RoundedJButton;
 

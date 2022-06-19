@@ -1,19 +1,14 @@
 package controllers;
 
 import models.GrammarManager;
-import views.PrincipalFrame;
-import views.ProductionsDialog;
 import views2.JMainFrame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class Controller implements ActionListener{
 
     private GrammarManager manager;
-    private PrincipalFrame frame;
     private JMainFrame jMainFrame;
 
     public Controller(){
@@ -76,8 +71,6 @@ public class Controller implements ActionListener{
 
     private void validateWordOnGrammar(){
         //To do...
-        String word = frame.getWord();
-        frame.showTree(manager.getParticularRoot(word));
     }
 
 }

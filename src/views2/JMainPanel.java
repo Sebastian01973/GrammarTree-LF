@@ -8,7 +8,6 @@ import views2.right.JRightPanel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 public class JMainPanel extends JPanel {

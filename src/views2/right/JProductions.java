@@ -1,13 +1,11 @@
 package views2.right;
 
 import models.Production;
-import views.PanelProductions;
 import views2.Constant;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 public class JProductions extends JPanel  {

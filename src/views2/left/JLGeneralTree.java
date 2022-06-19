@@ -1,7 +1,7 @@
 package views2.left;
 
 import models.GeneralNode;
-import views.MyTreeCellRenderer;
+import views2.MyTreeCellRenderer;
 import views2.Constant;
 
 import javax.swing.*;

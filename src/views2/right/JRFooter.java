@@ -1,7 +1,6 @@
 package views2.right;
 
 import controllers.Commands;
-import views.Buttons;
 import views2.Constant;
 import views2.models.RoundedJButton;
 

@@ -1,6 +1,5 @@
 package views2.models;
 
-import views.Buttons;
 import views2.Constant;
 
 import javax.swing.*;
