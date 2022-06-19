@@ -47,9 +47,13 @@ public class Controller implements ActionListener, MouseListener {
                 break;
             case ADD_PRODUCION:
                 productionsDialog.addProductionField();
+                //News
+                jMainFrame.addProductionField();
                 break;
             case DELETE_PRODUCION:
                 productionsDialog.deleteProductionField();
+                //News
+                jMainFrame.deleteProductionField();
                 break;
             case VALIDATE_WORD:
                 validateWordOnGrammar();
@@ -61,32 +65,39 @@ public class Controller implements ActionListener, MouseListener {
 
         manager.createGrammar(frame.getGrammarName(),frame.getNoTerminalSimbols(),frame.getSigma(),
         frame.getAxiom(),productionsDialog.getProductions());
-
         frame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
 
         //News
         System.out.println("Crear");
         manager.createGrammar(jMainFrame.getGrammarName(),jMainFrame.getNoTerminalSimbols(),jMainFrame.getSigma(),
-                jMainFrame.getAxiom(),productionsDialog.getProductions()); // Ojo producciones
-
+                jMainFrame.getAxiom(),jMainFrame.getProductions()); // Ojo producciones
         jMainFrame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
 
     }
 
     private void editParameters(){
-
+        System.out.println("Editar");
         frame.enableFields();
         productionsDialog.enableProductions();
+
+        //News
+        jMainFrame.enableFields();
+        jMainFrame.enableProductions();
     }
 
     private void deleteParameters(){
+        System.out.println("eliminar");
         frame.deleteContentFields();
         productionsDialog.deleteProductions();
+
+        //News
+        jMainFrame.deleteContentFields();
+        jMainFrame.deleteProductions();
     }
 
     private void validateWordOnGrammar(){
+        //To do...
         String word = frame.getWord();
-        System.out.println("Botton Validar");
         frame.showTree(manager.getParticularRoot(word));
     }
 

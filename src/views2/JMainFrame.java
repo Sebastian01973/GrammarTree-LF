@@ -2,11 +2,13 @@ package views2;
 
 import controllers.Controller;
 import models.GeneralNode;
+import models.Production;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 
 public class JMainFrame extends JFrame {
 
@@ -55,5 +57,24 @@ public class JMainFrame extends JFrame {
 
     public void deleteContentFields(){
         jMainPanel.deleteContentFields();
+    }
+
+    public ArrayList<Production> getProductions(){
+        return jMainPanel.getProductions();
+    }
+
+    public void enableProductions(){
+        jMainPanel.enableProductions();
+    }
+    public void deleteProductions(){
+        jMainPanel.deleteProductions();
+    }
+
+    public void deleteProductionField(){
+        jMainPanel.deleteProductionField();
+    }
+
+    public void addProductionField(){
+        jMainPanel.addProductionField();
     }
 }

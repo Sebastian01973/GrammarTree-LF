@@ -1,6 +1,7 @@
 package views2;
 
 import models.GeneralNode;
+import models.Production;
 import views2.left.JLeftPanel;
 import views2.right.JRightPanel;
 
@@ -8,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 
 public class JMainPanel extends JPanel {
 
@@ -54,6 +56,25 @@ public class JMainPanel extends JPanel {
 
     public void deleteContentFields(){
         jRightPanel.deleteContentFields();
+    }
+
+    public ArrayList<Production> getProductions(){
+        return jRightPanel.getProductions();
+    }
+
+    public void enableProductions(){
+        jRightPanel.enableProductions();
+    }
+    public void deleteProductions(){
+        jRightPanel.deleteProductions();
+    }
+
+    public void deleteProductionField(){
+        jRightPanel.deleteProductionField();
+    }
+
+    public void addProductionField(){
+        jRightPanel.addProductionField();
     }
 
 }

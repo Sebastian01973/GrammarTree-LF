@@ -40,6 +40,7 @@ public class JRHeader extends JPanel {
         this.add(jgrammar);
 
         txtGramar = new PanelTextFields2("Ej: 10","Ingrese número de la gramática",Constant.FIELDS_FONT,Constant.COLOR_WHITE,Constant.COLOR_GRAY_LIGHT_1);
+
         this.add(txtGramar);
 
         add(Box.createRigidArea(new Dimension(0,10)));

@@ -1,11 +1,13 @@
 package views2.right;
 
+import models.Production;
 import views2.Constant;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 
 public class JRightPanel extends JPanel {
 
@@ -57,5 +59,23 @@ public class JRightPanel extends JPanel {
         jrHeader.deleteContentFields();
     }
 
+    public ArrayList<Production> getProductions(){
+        return jrBody.getProductions();
+    }
+
+    public void enableProductions(){
+        jrBody.enableProductions();
+    }
+    public void deleteProductions(){
+        jrBody.deleteProductions();
+    }
+
+    public void deleteProductionField(){
+        jrBody.deleteProductionField();
+    }
+
+    public void addProductionField(){
+        jrBody.addProductionField();
+    }
 
 }
