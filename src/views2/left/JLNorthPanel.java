@@ -19,8 +19,7 @@ public class JLNorthPanel extends JPanel {
         setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
         setBackground(Constant.COLOR_WHITE);
         initComponents(actionListener);
-        //To do .. Change
-        this.setVisible(true);
+        this.setVisible(false);
     }
 
     private void initComponents(ActionListener actionListener) {

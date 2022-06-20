@@ -77,4 +77,19 @@ public class JMainFrame extends JFrame {
     public void addProductionField(){
         jMainPanel.addProductionField();
     }
+
+    public String getWord(){
+        return jMainPanel.getWord();
+    }
+
+    public void setVisibleWordValidate(boolean status){
+        jMainPanel.setVisibleWordValidate(status);
+    }
+    public void setVisibleSouthPanel(boolean status){
+        jMainPanel.setVisibleSouthPanel(status);
+    }
+
+    public void setWordValidate(String word,Color bg){
+        jMainPanel.setWordValidate(word,bg);
+    }
 }

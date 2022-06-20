@@ -1,12 +1,12 @@
 package controllers;
 
 import models.GrammarManager;
+import views2.Constant;
 import views2.JMainFrame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// Pruebas con el branch Develop
 public class Controller implements ActionListener{
 
     private GrammarManager manager;
@@ -46,32 +46,31 @@ public class Controller implements ActionListener{
     }
     
     private void createAndAddGrammar(){
-
-        //News
         System.out.println("Crear");
         manager.createGrammar(jMainFrame.getGrammarName(),jMainFrame.getNoTerminalSimbols(),jMainFrame.getSigma(),
                 jMainFrame.getAxiom(),jMainFrame.getProductions()); // Ojo producciones
         jMainFrame.showGeneralTree(manager.getGeneralRoot(),manager.getGrammarName());
+        jMainFrame.setVisibleWordValidate(true);
 
     }
 
     private void editParameters(){
         System.out.println("Editar");
-
-        //News
         jMainFrame.enableFields();
         jMainFrame.enableProductions();
     }
 
     private void deleteParameters(){
         System.out.println("eliminar");
-        //News
         jMainFrame.deleteContentFields();
         jMainFrame.deleteProductions();
     }
 
     private void validateWordOnGrammar(){
-        //To do...
+        System.out.println("Validar Palabra");
+        String word = jMainFrame.getWord();
+        jMainFrame.setVisibleSouthPanel(true);
+        jMainFrame.setWordValidate(Constant.WORD_VALIDATE,Constant.COLOR_GREEN_1);
     }
 
 }

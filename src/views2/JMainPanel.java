@@ -76,4 +76,18 @@ public class JMainPanel extends JPanel {
         jRightPanel.addProductionField();
     }
 
+    public String getWord(){
+        return jLeftPanel.getWord();
+    }
+    public void setVisibleWordValidate(boolean status){
+        jLeftPanel.setVisibleWordValidate(status);
+    }
+
+    public void setVisibleSouthPanel(boolean status){
+        jLeftPanel.setVisibleSouthPanel(status);
+    }
+    public void setWordValidate(String word,Color bg){
+        jLeftPanel.setWordValidate(word,bg);
+    }
+
 }

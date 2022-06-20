@@ -36,4 +36,20 @@ public class JLeftPanel extends JPanel {
         jlGeneralTree.showTree(root,grammarName);
     }
 
+    public String getWord(){
+        return jLeftNorthPanel.getWord();
+    }
+
+    public void setVisibleWordValidate(boolean status){
+        jLeftNorthPanel.setVisibleWordValidate(status);
+    }
+
+    public void setVisibleSouthPanel(boolean status){
+        jLeftSouthPanel.setVisibleSouthPanel(status);
+    }
+
+    public void setWordValidate(String word,Color bg){
+        jLeftSouthPanel.setWordValidate(word,bg);
+    }
+
 }

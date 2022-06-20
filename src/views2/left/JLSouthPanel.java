@@ -14,6 +14,7 @@ public class JLSouthPanel extends JPanel {
         this.setBackground(Constant.COLOR_RED_LIGHT_1);
         this.setLayout(new FlowLayout(FlowLayout.CENTER));
         this.setBorder(BorderFactory.createEmptyBorder(5,3,2,3));
+        this.setVisible(false);
         initComponents();
     }
 
@@ -29,5 +30,9 @@ public class JLSouthPanel extends JPanel {
         this.setBackground(bg);
         wordValidate.setColorPaint(bg);
         this.wordValidate.setText(word);
+    }
+
+    public void setVisibleSouthPanel(boolean status){
+        this.setVisible(status);
     }
 }
