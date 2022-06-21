@@ -12,6 +12,9 @@ public class GrammarManager {
     public GrammarManager(){
 
     }
+
+
+
 // metodo que crea la gramática
     public void createGrammar(String grammarName, String[] noTerminalSimbols, String[] terminalSimbols, 
     String axiomSimbol, ArrayList<Production> productions){

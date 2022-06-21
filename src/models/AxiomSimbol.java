@@ -1,5 +1,6 @@
 package models;
 
+
 public class AxiomSimbol implements Simbol{
 
     private String simbol; 
