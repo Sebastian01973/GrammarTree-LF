@@ -72,5 +72,4 @@ public class Controller implements ActionListener{
         jMainFrame.setVisibleSouthPanel(true);
         jMainFrame.setWordValidate(Constant.WORD_VALIDATE,Constant.COLOR_GREEN_1);
     }
-
 }
